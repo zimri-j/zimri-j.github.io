@@ -26,8 +26,12 @@
         <p>
             Hello World
         </p>
-        <hr>
+        
     </div>
+ 
+
+    <hr>
+   
     <div class="post-content">
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -51,15 +55,34 @@
     
 </div>
     <div class="footer" id="footer">
-    <p>Copyright © 2020 <a class="flink" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>-<a class="flink" href="https://github.com/sanjinhub/hexo-theme-geek" target="_blank" rel="noopener">Geek</a>.
-        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
-            <input type="checkbox" name="switch" id="update_style">
-            <span class="el-switch-style"></span>
-        </label>
-<!--         <script type="text/javascript">
+    <p>
+ 
+
+        <span>Site Runing Time: 
+                <script language = "JavaScript"type = "text/javascript" >
+                var urodz = new Date("12/20/2019");
+                var now = new Date();
+                var ile = now.getTime() - urodz.getTime();
+                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+                document.write( + dni)
+                </script>
+            Day
+        </span>
+        <br />
+        Blog Powerby:
+        <a class="flink" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> | 
+        Theme Powerby:
+        <a class="flink" href="https://github.com/sanjinhub/hexo-theme-geek" target="_blank" rel="noopener">Geek</a>
+        <br />
+        Copyright © 2019-<script>document.write( new Date().getFullYear() );</script> 
+        <a class="flink" href="https://ioi.run" target="_blank" rel="noopener">ioi.run</a>
+
+<!--   
+        <script type="text/javascript">
         var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
         document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-        </script> -->
+        </script> 
+-->
     </p>
 </div>
 <input type="hidden" id="web_style" value="black">
@@ -75,6 +98,7 @@
 
 <script src="/js/js.js"></script>
 
+ 
 <style type="text/css">
 .v * {
     color: #698fca;

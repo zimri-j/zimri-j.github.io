@@ -21,11 +21,20 @@
 
 <body id="bodyx">
     <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> IOI GEEK <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
+
+    <img src="/img/oio-logo.png" class="logopng">
+    <a class="flink" href="/">
+    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> OIO GEEK <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
+    </a>
 </div>
 <div class="hd">
     <ol class="breadcrumb">
+        Dark/Light:
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label><br />
+
         
             <li><a class="ba" href="/project">作品</a></li>
         
@@ -37,7 +46,8 @@
         
             <li><a class="ba" href="https://zimri-j.github.io" target="_blank" rel="noopener">Github</a></li>
         
-    </ol>
+
+    </ol> 
     <hr class="breadcrumbhr">
 </div>
 <div class="hd">
@@ -52,28 +62,47 @@
             </div>
             
         
-        <a class="flink" href="/2020/05/07/hello-world/">
+        <a class="flink" href="/uncategorized/hello-world.html">
             <div class="list">
                 <div class="postname">
                     Hello World
                 </div>
                 <div class="posttime">
-                    May 7th
+                    2020-05-07
                 </div>
             </div>
         </a>
     
 </div>
     <div class="footer" id="footer">
-    <p>Copyright © 2020 <a class="flink" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>-<a class="flink" href="https://github.com/sanjinhub/hexo-theme-geek" target="_blank" rel="noopener">Geek</a>.
-        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
-            <input type="checkbox" name="switch" id="update_style">
-            <span class="el-switch-style"></span>
-        </label>
-<!--         <script type="text/javascript">
+    <p>
+ 
+
+        <span>Site Runing Time: 
+                <script language = "JavaScript"type = "text/javascript" >
+                var urodz = new Date("12/20/2019");
+                var now = new Date();
+                var ile = now.getTime() - urodz.getTime();
+                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+                document.write( + dni)
+                </script>
+            Day
+        </span>
+        <br />
+        Blog Powerby:
+        <a class="flink" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> | 
+        Theme Powerby:
+        <a class="flink" href="https://github.com/sanjinhub/hexo-theme-geek" target="_blank" rel="noopener">Geek</a>
+        <br />
+        Copyright © 2019-<script>document.write( new Date().getFullYear() );</script> 
+        <a class="flink" href="https://ioi.run" target="_blank" rel="noopener">ioi.run</a>
+
+<!--   
+        <script type="text/javascript">
         var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
         document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-        </script> -->
+        </script> 
+-->
     </p>
 </div>
 <input type="hidden" id="web_style" value="black">
@@ -89,6 +118,7 @@
 
 <script src="/js/js.js"></script>
 
+ 
 <style type="text/css">
 .v * {
     color: #698fca;

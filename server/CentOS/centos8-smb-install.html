@@ -9,7 +9,7 @@
     <meta name="description" content="Windows和Linux系统的结构不同，两者之间的和平共存通常是一个挑战。多亏了Samba，这两个系统现在可以通过网络共享文件和文件夹。那么Samba是什么？Samba是一种免费和开放源代码协议，它允许文件以简单，无缝的方式在两个系统之间共享。您可以在Linux服务器上拥有Samba服务器，该服务器托管Windows客户端可以访问的各种文件和文件夹。在本教程中，您将学习如何在CentOS 8上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS8 安装SMB Server">
-<meta property="og:url" content="http://yoursite.com/server/CentOS/centos8-smb-install.html">
+<meta property="og:url" content="https://oio.run/server/CentOS/centos8-smb-install.html">
 <meta property="og:site_name" content="OIO GEEK">
 <meta property="og:description" content="Windows和Linux系统的结构不同，两者之间的和平共存通常是一个挑战。多亏了Samba，这两个系统现在可以通过网络共享文件和文件夹。那么Samba是什么？Samba是一种免费和开放源代码协议，它允许文件以简单，无缝的方式在两个系统之间共享。您可以在Linux服务器上拥有Samba服务器，该服务器托管Windows客户端可以访问的各种文件和文件夹。在本教程中，您将学习如何在CentOS 8上">
 <meta property="og:locale" content="zh_CN">
@@ -90,17 +90,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/server/CentOS/centos8-smb-install.html" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&text=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&is_video=false&description=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=CentOS8 安装SMB Server&body=Check out this article: http://yoursite.com/server/CentOS/centos8-smb-install.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&name=CentOS8 安装SMB Server&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/server/CentOS/centos8-smb-install.html&t=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://oio.run/server/CentOS/centos8-smb-install.html" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://oio.run/server/CentOS/centos8-smb-install.html&text=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://oio.run/server/CentOS/centos8-smb-install.html&is_video=false&description=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CentOS8 安装SMB Server&body=Check out this article: https://oio.run/server/CentOS/centos8-smb-install.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://oio.run/server/CentOS/centos8-smb-install.html&name=CentOS8 安装SMB Server&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://oio.run/server/CentOS/centos8-smb-install.html&t=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -214,17 +214,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/server/CentOS/centos8-smb-install.html" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&text=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&is_video=false&description=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=CentOS8 安装SMB Server&body=Check out this article: http://yoursite.com/server/CentOS/centos8-smb-install.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/server/CentOS/centos8-smb-install.html&name=CentOS8 安装SMB Server&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/server/CentOS/centos8-smb-install.html&t=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://oio.run/server/CentOS/centos8-smb-install.html" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://oio.run/server/CentOS/centos8-smb-install.html&text=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://oio.run/server/CentOS/centos8-smb-install.html&is_video=false&description=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CentOS8 安装SMB Server&body=Check out this article: https://oio.run/server/CentOS/centos8-smb-install.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://oio.run/server/CentOS/centos8-smb-install.html&title=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://oio.run/server/CentOS/centos8-smb-install.html&name=CentOS8 安装SMB Server&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://oio.run/server/CentOS/centos8-smb-install.html&t=CentOS8 安装SMB Server" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
